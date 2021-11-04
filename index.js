@@ -13,27 +13,14 @@ server.use(cors());
 
 
 server.get('/result', function (request, response) {
-  response.set({
-    'Access-Control-Allow-Credentials': true,
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'X-Requested-With,Content-Type',
-    'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS',
-    'Content-Type': 'application/json; charset=utf-8'
-  })
-  // console.log(request)
+
   let rawdata = fs.readFileSync('myGame.json');
   let games = JSON.parse(rawdata);
   response.send(games);
 })
 
 server.get('/detail/:id', function (request, response) {
-  response.set({
-    'Access-Control-Allow-Credentials': true,
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'X-Requested-With,Content-Type',
-    'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS',
-    'Content-Type': 'application/json; charset=utf-8'
-  })
+
   var gameId = request.params.id
 
 
