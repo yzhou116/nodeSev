@@ -10,7 +10,10 @@ var server = express()
 server.use(bodyParser.urlencoded({ extended: false }))
 server.use(bodyParser.json())
 server.use(cors());
+server.get('/', function (request, response) {
 
+  response.send("Hello Stupid Vercel");
+})
 
 server.get('/result', function (request, response) {
 
