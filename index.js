@@ -73,5 +73,5 @@ console.log(request.query)
 
 })
 
-server.listen(3333)
+server.listen(process.env.PORT || 5000)
 console.log("index start")
