@@ -4,7 +4,7 @@
   "description": "assignment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "yizhou",
   "license": "ISC",
@@ -12,4 +12,5 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5"
   }
+
 }
