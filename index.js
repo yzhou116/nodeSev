@@ -1,7 +1,8 @@
 var express = require('express')
 const fs = require('fs');
-var bodyParser = require('body-parser')
+
 const cors = require('cors');
+var bodyParser = require('body-parser')
 
 
 
